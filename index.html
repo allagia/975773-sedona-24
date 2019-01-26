@@ -5,8 +5,109 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-navigation-logo" href="index.html">
+          <img src="logo.svg" width="111" height="24" alt="Логотип Седоны">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="photo.html">Фото и видео</a></li>
+          <li><a href="state-map.html">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <span>Welcome</span>
+        <span>-to the gorgeouse-</span>
+        <h1>Sedona</h1>
+        <q>Because the Grand Canyon sucks!</q>
+      </div>
+     
+      <section class="advantages">
+        <h2 class="advantages">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="advantages">Рассмотрим 5 причин, по которым Седона кручем, чем Гранд Каньон!</p>
+        <ul class="advantages-list">
+          <li class="advantages-list-item1">
+            <h3>Настоящий городок</h3>
+            <p class="advantages-list-item1">-№1-</p><!--Может заменить на спан?Нужен класс?-->
+            <p class="advantages-list-item1">Седона- не аттракцион для туристов, там течёт своя жизнь</p>
+            <img src="photo-sedona1.png" width="100" height="200" alt="фоновое фото Седона">
+            <ul class="real-city">
+              <li class="real-city-list">
+                <section class="real-city-list-item">
+                  <h4>Жильё</h4><!--Нужно ди оборачивать в ссылку?-->
+                  <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p><!--нужен ли класс? нужно ли расписать как 2 строки, потому что текст с переносом?-->
+                  <a href="accomodation.html"><img src="house.png" width="100" height="200" alt="домик"></a><!--что кликабельное в этой секции (картинка и название?)-->
+                </section>
+              </li>
+              <li>
+                <section class="food">
+                  <h4>Еда</h4>
+                  <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                  <a href="food.html"><img src="food.png" width="100" height="200" alt="бургер"></a>
+                </section>
+              </li>
+              <li>
+                <section class="souvenirs">
+                  <h4>Сувениры</h4>
+                  <p>Не только китайского, но и местного производства!</p>
+                  <a href="souvenirs.html"><img src="souvenirs.png" width="100" height="200" alt="сувениры"></a>
+                </section>
+              </li>
+            </ul>
+          </li>
+          <li class="advantages-list-item1">
+            <img src="photo-sedona2.png" width="100" height="200" alt="фоновое фото Седона">
+            <h3>Там есть мост дьявола</h3>
+            <p>-№2-</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+           </li>
+          <li class="advantages-list-item2">
+            <h3>Небольшая площадь</h3>
+            <p>-№3-</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="advantages-list-item2">
+            <h3>Красивая дорога</h3>
+            <p>-№4-</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantages-list-item2">
+            <h3>Мало туристов</h3>
+            <p>-№5-</p>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+      <section class="search-hotel">
+        <h2>Заинтересовались?</h2>
+        <p class="serch-hotel">Укажите даты предполагаемой поездки,</p>
+        <p class="serch-hotel">и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <!--Здесь будет форма-->
+      </section>
 
+      <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
+        <!--не знаю, как оформлять эту секцию. Будет ли +/- для изменения размеров карты. Будет ли х дл закрытия?-->
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <a class="hashtag" href="#">#vizitsedona</a>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Твитер</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Ютуб</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">Website by
+        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+    </footer>
   </body>
 </html>
