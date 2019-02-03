@@ -22,7 +22,7 @@
       <div>
         <img src="img/background-photo.jpg" width="1200" height="773" alt="горы Седоны">
         <img src="img/welcome.svg" width="459" height="353" alt="Приветствие">
-         <h1>Sedona</h1>
+        <h1>Sedona</h1>
         <q>Because the Grand Canyon sucks!</q>
       </div>
       <section class="advantages">
@@ -76,7 +76,34 @@
       <section class="search-hotel">
         <h2>Заинтересовались?</h2>
         <p class="serch-hotel">Укажите даты предполагаемой поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <!--Здесь будет форма-->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <h3>ПОИСК ГОСТИНИЦЫ В седоне</h3>
+          <p>
+            <label for="arrival-date">Дата заезда:</label>
+            <input type="text" name="arrival date" id="arrival-date" value="" placeholder="24 апреля 2017">
+            <!--как сделать выбор из календаря? иконку календаря ставить в CSS-->
+          </p>
+          <p>
+            <label for="departure-date">Дата выезда:</label>
+            <input type="text" name="departure date" id="departure-date" value="" placeholder="4 июля 2017">
+            <!--как сделать выбор из календаря? иконку календаря ставить в CSS-->
+          </p>
+          <p>
+            <lable for="number-of-adults">Взрослые:</lable>
+            <!--<button type="button" name="minus" value="уменьшение количества взрослых">-</button>-->
+            <!--Можно ли для инпута типа number сделать счетчик через CSS или нужны эти кнопки?-->
+            <input type="number" name="adults" id="number-of-adults" placeholder="2" min="0">
+            <!--<button type="button" name="plus" value="увеличение количества взрослых">+</button>-->
+          </p>
+          <p>
+            <lable for="number-of-children">Дети:</lable>
+            <input type="number" name="children" id="number-of-children" placeholder="0" min="0">
+          </p>
+          <p>
+            <button type="submit" name="search-button" value="поиск вариантов">Найти</button>
+            <button type="button" value="закрыть форму поиска">Закрыть</button>
+          </p>
+        </form>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
