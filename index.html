@@ -79,25 +79,28 @@
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <h3>ПОИСК ГОСТИНИЦЫ В седоне</h3>
           <p>
-            <label for="arrival-date">Дата заезда:</label>
-            <input type="text" name="arrival date" id="arrival-date" value="" placeholder="24 апреля 2017">
+            <label for="arrival-date-id">Дата заезда:</label>
+            <input type="text" name="arrival-date" id="arrival-date-id" value="" placeholder="24 апреля 2017">
+            <button type="button" name="calendar"><img src="img/calendar.svg" width="21" height="22" alt="календарь"></button>
             <!--как сделать выбор из календаря? иконку календаря ставить в CSS-->
           </p>
           <p>
-            <label for="departure-date">Дата выезда:</label>
-            <input type="text" name="departure date" id="departure-date" value="" placeholder="4 июля 2017">
+            <label for="departure-date-id">Дата выезда:</label>
+            <input type="text" name="departure-date" id="departure-date-id" value="" placeholder="4 июля 2017">
+            <button type="button" name="calendar"><img src="img/calendar.svg" width="21" height="22" alt="календарь"></button>
             <!--как сделать выбор из календаря? иконку календаря ставить в CSS-->
           </p>
           <p>
             <lable for="number-of-adults">Взрослые:</lable>
-            <!--<button type="button" name="minus" value="уменьшение количества взрослых">-</button>-->
-            <!--Можно ли для инпута типа number сделать счетчик через CSS или нужны эти кнопки?-->
+            <button type="button" name="minus" value="уменьшение количества взрослых">-</button>
             <input type="number" name="adults" id="number-of-adults" placeholder="2" min="0">
-            <!--<button type="button" name="plus" value="увеличение количества взрослых">+</button>-->
+            <button type="button" name="plus" value="увеличение количества взрослых">+</button>
           </p>
           <p>
             <lable for="number-of-children">Дети:</lable>
+            <button type="button" name="minus" value="уменьшение количества детей">-</button>
             <input type="number" name="children" id="number-of-children" placeholder="0" min="0">
+            <button type="button" name="plus" value="увеличение количества детей">+</button>
           </p>
           <p>
             <button type="submit" name="search-button" value="поиск вариантов">Найти</button>
