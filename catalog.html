@@ -23,7 +23,49 @@
     <h1 class="visually-hidden">Фильтры</h1>
     <img src="img/filter-background.png" width="1200" height="562" alt="фоновое фото фильтров">
     <!--это изображение скорее всего нужно будет вставить в css-->
-    <!--здесь будет форма для фильтров-->
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=parseInt(pricepernight.value)">
+      <fieldset>
+        <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="pool" id="pool-id" checked>
+              <label for="pool-id">Бассейн</label>
+            </li>
+            <li>
+              <input type="checkbox" name="parking" id="parking-id">
+              <label for="parking-id">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" name="wi-fi" id="wi-fi-id">
+              <label for="wi-fi-id">Wi-Fi</label>
+            </li>
+          </ul>
+      </fieldset>
+      <fieldset>
+          <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="hotel" id="hotel-id" checked>
+                <label for="hotel-id">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel" id="motel-id" checked>
+                <label for="motel-id">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="apartment" id="apartment-id" checked>
+                <label for="apartment-id">Апартаменты</label>
+              </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки (Р):</legend>
+          <span>от 0</span>
+          <span>до</span><output name="priceoutput"></output>
+          <input type="range" name="pricepernight" min="0" max="5000">
+       </fieldset>
+       <button type="submit">Показать</button>
+    </form>
   </section>
   <div class="filters-results">
     <span class="number-of-hotels">Найдено: 3</span>
@@ -75,48 +117,18 @@
       </li>
     </ul>
   </section>
-  <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-    <h3>ПОИСК ГОСТИНИЦЫ В седоне</h3>
-    <p>
-      <label for="arrival-date-id">Дата заезда:</label>
-      <input type="text" name="arrival-date" id="arrival-date-id" value="" placeholder="24 апреля 2017">
-      <button type="button" name="calendar"><img src="img/calendar.svg" width="21" height="22" alt="календарь"></button>
-      <!--как сделать выбор из календаря? иконку календаря ставить в CSS-->
-    </p>
-    <p>
-      <label for="departure-date-id">Дата выезда:</label>
-      <input type="text" name="departure-date" id="departure-date-id" value="" placeholder="4 июля 2017">
-      <button type="button" name="calendar"><img src="img/calendar.svg" width="21" height="22" alt="календарь"></button>
-      <!--как сделать выбор из календаря? иконку календаря ставить в CSS-->
-    </p>
-    <p>
-      <label for="number-of-adults">Взрослые:</label>
-      <button type="button" name="minus" value="уменьшение количества взрослых">-</button>
-      <input type="number" name="adults" id="number-of-adults" placeholder="2" min="0">
-      <button type="button" name="plus" value="увеличение количества взрослых">+</button>
-    </p>
-    <p>
-      <label for="number-of-children">Дети:</label>
-      <button type="button" name="minus" value="уменьшение количества детей">-</button>
-      <input type="number" name="children" id="number-of-children" placeholder="0" min="0">
-      <button type="button" name="plus" value="увеличение количества детей">+</button>
-    </p>
-    <p>
-      <button type="submit" name="search-button" value="поиск вариантов">Найти</button>
-    </p>
-  </form>
 </main>
 <footer class="main-footer">
   <a class="hashtag" href="#">#vizitsedona</a>
     <div class="footer-social">
       <ul>
-        <li><a class="social-button visually-hidden" href="#">Твитер</a></li>
-        <li><a class="social-button visually-hidden" href="#">Фейсбук</a></li>
-        <li><a class="social-button visually-hidden" href="#">Ютуб</a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Твитер</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Ютуб</span></a></li>
       </ul>
     </div>
     <p class="footer-copyright">Website by
-      <a class="button visually-hidden" href="https://htmlacademy.ru">HTML Academy</a>
+      <a class="button" href="https://htmlacademy.ru"><span class="visually-hidden">HTML Academy</span></a>
     </p>
   </footer>
 </body>
