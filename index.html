@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/my-style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -19,14 +22,13 @@
       </nav>
     </header>
     <main>
-      <div>
-        <img src="img/background-photo.jpg" width="1200" height="773" alt="горы Седоны">
+      <div class="index-top">
+        <h1 class="visually-hidden">Седона</h1>
+        <!--<img src="img/background-photo.jpg" width="1200" height="773" alt="горы Седоны">-->
         <img src="img/welcome.svg" width="459" height="353" alt="Приветствие">
-        <h1>Sedona</h1>
-        <q>Because the Grand Canyon sucks!</q>
       </div>
       <section class="advantages">
-        <h2 class="advantages">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="advantages">Рассмотрим 5 причин, по которым Седона кручем, чем Гранд Каньон!</p>
         <ul class="advantages-list">
           <li class="advantages-list-item">
@@ -35,20 +37,20 @@
             <p class="advantages-list-item">Седона- не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="img/restaurant.jpg" width="800" height="256" alt="ресторан в Седоне">
           </li>
-          <li class="accomodation">
+          <li class="advantages-addition">
             <h4>Жильё</h4>
-            <p class="accomodation">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            <img src="house.svg" width="100" height="200" alt="домик">
+            <p class="advantages-addition">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <img src="img/house.svg" width="100" height="200" alt="домик">
           </li>
-          <li class="food">
+          <li class="advantages-addition">
             <h4>Еда</h4>
-            <p class="food">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-            <img src="food.png" width="100" height="200" alt="бургер">
+            <p class="advantages-addition">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            <img src="img/burger.svg" width="100" height="200" alt="бургер">
           </li>
-          <li class="souvenirs">
+          <li class="advantages-addition">
             <h4>Сувениры</h4>
-            <p class="souvenirs">Не только китайского, но и местного производства!</p>
-            <img src="souvenirs.png" width="100" height="200" alt="сувениры">
+            <p class="advantages-addition">Не только китайского, но и местного производства!</p>
+            <img src="img/gift.svg" width="100" height="200" alt="сувениры">
           </li>
           <li class="advantages-list-item">
             <img src="img/devil-road.jpg" width="800" height="256" alt="мост дьявола">
@@ -75,7 +77,7 @@
       </section>
       <section class="search-hotel">
         <h2>Заинтересовались?</h2>
-        <p class="serch-hotel">Укажите даты предполагаемой поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="search-hotel">Укажите даты предполагаемой поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <h3>ПОИСК ГОСТИНИЦЫ В седоне</h3>
           <p>
@@ -116,9 +118,9 @@
       <a class="hashtag" href="#">#vizitsedona</a>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Твитер</span></a></li>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Ютуб</span></a></li>
+          <li><a class="social-button twitter" href="#"><span class="visually-hidden">Твитер</span></a></li>
+          <li><a class="social-button facebook" href="#"><span class="visually-hidden">Фэйсбук</span></a></li>
+          <li><a class="social-button youtube" href="#"><span class="visually-hidden">Ютуб</span></a></li>
         </ul>
       </div>
       <p class="footer-copyright">Website by
