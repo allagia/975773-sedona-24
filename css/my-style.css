@@ -2,7 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
 
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -100,7 +100,7 @@ p.advantages {
 }
 p.search-hotel {
   text-align: center;
-  line-height: 24;
+  line-height: 24px;
 }
 
 .main-footer {
