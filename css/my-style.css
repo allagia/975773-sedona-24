@@ -124,47 +124,25 @@ p.search-hotel {
   list-style: none;
 }
 
-.twitter {
-  display: inline-block;
+.social-button {
   width: 46px;
   height: 48px;
-  vertical-align: middle;
-  padding-top: 17px;
-  padding-bottom: 16px;
-  padding-left: 15px;
-  padding-right: 14px;
   background-color: #81b3d2;
   background-image: url("../img/twitter-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.twitter {
+  background-image: url("../img/twitter-icon.svg");
+}
+
 .facebook {
-  display: inline-block;
-  width: 46px;
-  height: 48px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-left: 17px;
-  padding-right: 17px;
-  background-color: #81b3d2;
   background-image: url("../img/fb-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .youtube {
-  display: inline-block;
-  width: 46px;
-  height: 48px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 13px;
-  padding-right: 13px;
-  background-color: #81b3d2;
   background-image: url("../img/youtube-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .footer-copyright {
@@ -273,5 +251,6 @@ a.button {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
+
 
 
