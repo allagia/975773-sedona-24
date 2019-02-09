@@ -12,6 +12,14 @@ body {
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 a {
   text-decoration: none;
 }
@@ -125,6 +133,7 @@ p.search-hotel {
 }
 
 .social-button {
+  display: inline-block;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
