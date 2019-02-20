@@ -29,14 +29,14 @@
         <legend>Инфраструктура:</legend>
           <ul>
             <li>
-              <input type="checkbox" name="pool" id="pool-id" checked>
+              <input class="visually-hidden" type="checkbox" name="pool" id="pool-id" checked>
               <label for="pool-id">Бассейн</label>
             </li><li>
-              <input type="checkbox" name="parking" id="parking-id">
+              <input class="visually-hidden" type="checkbox" name="parking" id="parking-id">
               <label for="parking-id">Парковка</label>
             </li>
             <li>
-              <input type="checkbox" name="wi-fi" id="wi-fi-id">
+              <input class="visually-hidden" type="checkbox" name="wi-fi" id="wi-fi-id">
               <label for="wi-fi-id">Wi-Fi</label>
             </li>
           </ul>
@@ -45,29 +45,34 @@
           <legend>Тип жилья:</legend>
             <ul>
               <li>
-                <input type="checkbox" name="hotel" id="hotel-id" checked>
+                <input class="visually-hidden" type="checkbox" name="hotel" id="hotel-id" checked>
                 <label for="hotel-id">Гостиница</label>
               </li>
               <li>
-                <input type="checkbox" name="motel" id="motel-id" checked>
+                <input class="visually-hidden" type="checkbox" name="motel" id="motel-id" checked>
                 <label for="motel-id">Мотель</label>
               </li>
               <li>
-                <input type="checkbox" name="apartment" id="apartment-id" checked>
+                <input class="visually-hidden" type="checkbox" name="apartment" id="apartment-id" checked>
                 <label for="apartment-id">Апартаменты</label>
               </li>
             </ul>
         </fieldset>
         <fieldset class="price-filter">
           <legend>Стоимость в сутки (Р):</legend>
-          <div class="price-from-to">
-            <span>от 0</span>
-            <span>до</span>
-            <output name="priceoutput"></output>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
           </div>
-          <input type="range" name="pricepernight" min="0" max="5000">
-          <button type="submit">Показать</button><!---->
-       </fieldset>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn-transparent" type="submit">Показать</button>
+        </fieldset>
     </form>
   </section>
   <section class="results-sorting">
@@ -77,13 +82,19 @@
     <div class="sorting">
       <h2>Сортировка:</h2>
       <ul class="sorting-item">
-        <li><a href="price.html">По цене</a></li>
+        <li><a class="current-sorting-item" href="price.html">По цене</a></li>
         <li><a href="type.html">По типу</a></li>
         <li><a href="rating.html">По рейтингу</a></li>
       </ul>
       <ul class="arrows">
-        <li><a href="filtered-list-up"><img src="img/icon-up-dir.svg" width="11" height="10" alt="вверх"></a></li>
-        <li><a href=" filtered-list-down"><img src="img/icon-down-dir.svg" width="11" height="10" alt="вниз"></a></li>
+        <li class="arrow-up">
+          <a href="filtered-list-up"><span class="visually-hidden">отсортировать по возрастанию</span></a>
+        </li>
+        <li class="arrow-down">
+          <a href="filtered-list-down">
+            <span class="visually-hidden">отсортировать по убыванию</span>
+          </a>
+        </li>
       </ul>
     </div>
   </section>
@@ -93,7 +104,7 @@
       <li class="hotels-list-item">
         <img src="img/amara-hotel.jpg" width="135" height="90" alt="Amara Resort&Spa">
         <div class="inner-layout1">
-          <h2><a class="hotel-name" href="amara.info.html">Amara Resort&Spa</a></h2>
+          <h2><a class="hotel-name" href="amara.info.html">Amara Resort & Spa</a></h2>
           <div class="inner-layout2">
             <span class="accomodation-type">Гостинница</span>
             <span class="price">от 4000 Р.</span>
