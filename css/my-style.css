@@ -427,14 +427,28 @@ a
   background-image: url('../img/twitter-icon.svg');
 }
 
+.twitter:focus {
+  background-image: url("../img/twitter-icon-focus.svg");
+}
+
 .facebook
 {
   background-image: url('../img/fb-icon.svg');
 }
 
+.facebook:focus
+{
+  background-image: url('../img/fb-icon-focus.svg');
+}
+
 .youtube
 {
   background-image: url('../img/youtube-icon.svg');
+}
+
+.youtube:focus
+{
+  background-image: url('../img/youtube-icon-focus.svg');
 }
 
 .footer-copyright
@@ -984,7 +998,37 @@ a.button
   background: url("../img/checkbox-on.svg") no-repeat;
 }
 
+#pool-id:disabled + label:before,
+#parking-id:disabled + label:before,
+#wi-fi-id:disabled + label:before,
+#hotel-id:disabled + label:before,
+#motel-id:disabled + label:before,
+#apartment-id:disabled + label:before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 24px;
+  position: absolute;
+  top: -1px;
+  left: -40px;
+  background: url("../img/checkbox-off-disabled.svg") no-repeat;
+}
 
+#pool-id:checked:disabled + label:before,
+#parking-id:checked:disabled + label:before,
+#wi-fi-id:checked:disabled + label:before,
+#hotel-id:checked:disabled + label:before,
+#motel-id:checked:disabled + label:before,
+#apartment-id:checked:disabled + label:before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 24px;
+  position: absolute;
+  top: -1px;
+  left: -40px;
+  background: url("../img/checkbox-on-disabled.svg") no-repeat;
+}
 
 .price-filter {
   width: 319px;
@@ -1263,6 +1307,10 @@ a.button
 {
   display: flex;
   margin: 0;
+}
+
+.inner-layout3 a {
+  color: #fff;
 }
 
 .layout4
