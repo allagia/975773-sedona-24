@@ -11,22 +11,22 @@ body
   text-transform: uppercase;
 
   color: #333;
-  background-color: #fff;
+  background-color: #f2f2f2;
 }
 
-/* header,
+header,
 main,
 footer {
   box-shadow:
-  /* 0px 0px 20px 0 #a9a9a9,
-  40px 0 0 0 #f2f2f2,
+  0px 0px 20px 0 #a9a9a9;
+  /* 40px 0 0 0 #f2f2f2,
   -40px 0 0 0 #f2f2f2; */
- } */
+ }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
-}
+} это плохо сказывается на картинках отелей в ie и edge */
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -170,7 +170,7 @@ a
 
   padding-left: 48px;
   padding-right: 49px;
-  padding-top: 46px;
+  padding-top: 43px; /*46px*/
   padding-bottom: 45px;
 }
 
@@ -182,7 +182,7 @@ a
 
 .layout2 span {
   display: block;
-  margin-bottom: 23px;
+  margin-bottom: 21px; /*23px*/
 }
 
 .advantages-item-add {
@@ -260,6 +260,7 @@ a
   padding-left: 73px;
   padding-right: 75px;
   padding-top: 60px;
+
   padding-bottom: 68px;
 }
 
@@ -680,7 +681,7 @@ a
 {
   width: 498px;
   margin-right: auto;
-  margin-bottom: 54px;
+  margin-bottom: 53px;
   margin-left: auto;
 
   text-align: center;
@@ -864,7 +865,7 @@ a
 .filters
 {
   width: 1200px;
-
+  height: 217px;
   background-image: url(../img/filter-background.png);
   background-repeat: no-repeat;
   background-position: 0 -300px;
@@ -875,6 +876,7 @@ a
   display: flex;
 
   width: 1200px;
+
   box-sizing: border-box;
   padding-left: 70px;
   padding-right: 70px;
@@ -892,11 +894,6 @@ a
   color: #fff;
   border: none;
   padding: 0;
-}
-
-.infrastructer-filter,
-.accomodation-type-filter {
-  display: flex;
 }
 
 .filter-inner legend {
@@ -1124,6 +1121,7 @@ a
   width: 1200px;
   padding: 24px 60px 20px 72px;
   box-sizing: border-box;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .sorting
@@ -1253,7 +1251,7 @@ a
   width: 1055px;
   padding-right: 73px;
   padding-left: 72px;
-  border: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .inner-layout1 {
