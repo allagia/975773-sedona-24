@@ -1,6 +1,7 @@
 var button = document.querySelector(".general-button");
 var popup = document.querySelector(".filter");
 var toggleClassPopup = function () {
+
   popup.classList.toggle("filter-show");
 }
 var arrivalDate = popup.querySelector("[name=arrival-date]");
@@ -23,6 +24,7 @@ toggleClassPopup();
 
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
+  popup.classList.remove("filter-error");
   toggleClassPopup();
   arrivalDate.focus();
   if (storageAdults) {
@@ -37,6 +39,9 @@ form.addEventListener("submit", function (evt) {
   if (!arrivalDate.value || !departureDate.value || !adults.value || !children.value) {
     evt.preventDefault();
     console.log("Нужно ввести дату заезда, дату выезда, количество взрослых и детей");
+    popup.classList.remove("filter-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("filter-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("adults", adults.value);
